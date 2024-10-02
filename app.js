@@ -76,3 +76,7 @@ section.append(l,h4);
 section.prepend(l,h4); // start/beginning
 
 // Removechild and remove
+const newList = document.querySelector('.new-list')
+const fourth = document.querySelector('.fourth')
+newList.removeChild("fourth")
+newList.remove() // removes all
