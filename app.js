@@ -31,3 +31,48 @@ console.log(h4);
 
 
 // Creating element and apending it in the dom
+// Creating element
+ const h1 =document.createElement("h1")
+//  h1.textContent = "Hello World";
+ h1.classList.add("greetings");
+
+//  hi.classList.remove("greetings")
+//  console.log(h1.textContent);
+console.log(h1);
+
+// Appending the child element
+body.appendChild(h1);
+
+
+// insert before
+const firstLi = document.querySelector("li")
+// selector insertBefore (what where)
+URL.insertBefore(newLi, firstLi)
+
+// Insert Adjacent
+const firstP = document.querySelector("p")
+const i = document.createElement("i")
+i.innerText= "Im italics"
+i.style.color = "skyblue"
+firstP.insertAdjacentElement("beforebegin", i);
+firstP.insertAdjacentElement("afterbegin", i);
+firstP.insertAdjacentElement("beforeend", i);
+firstP.insertAdjacentElement("afterend", i);
+
+// append and prepend
+
+let section = document.querySelector("section")
+const l = document.createElement("l");
+L.innerText= "Im italics";
+L.style.color = "skyblue";
+
+section.append(l);
+
+const h3 = document.createElement("h3")
+h3.innerText = "Frank"
+h3.style.color = "crimson"
+
+section.append(l,h4);
+section.prepend(l,h4); // start/beginning
+
+// Removechild and remove
