@@ -103,3 +103,28 @@ const para = document.querySelector('.para')
 para.addEventListener('click', (event) =>{
     console.log(event)
 })
+
+const form = document.querySelector("form");
+const input = input.querySelector("input");
+
+form.addEventListener("submit", (event) =>{
+    console.log(input.value);
+});
+
+// Keyboard Events
+
+// const put = document.querySelector("put");
+// put.addEventListener("keypress", ()=>{
+//     console.log("keypress");
+// })
+
+// const put = document.querySelector("put");
+// put.addEventListener("keyup", ()=>{
+//     console.log("keyup");
+// });
+
+const put = document.querySelector("put");
+put.addEventListener("keydown", ()=>{
+    console.log("keydown");
+});
+
